@@ -12,7 +12,7 @@ body {
     font-size: 24px;
     padding: 16px;
 }
-.header-wrapper, .hero-wrapper, .random-info, .quote-wrapper{
+.header-wrapper, .hero-wrapper, .random-info, .quote-wrapper, .cta{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,25 +56,32 @@ body {
     width: 100%;
     height: auto;
 }
+
 a {
     text-decoration: none;
 }
   
 ul {
-display: flex;  
-margin: 0;
-padding: 0;
-gap: 8px;
-list-style-type: none;
+    display: flex;  
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+    list-style-type: none;
 }
 
-button {
+button, .cta {
     border: none;
     border-radius: 8px;
     background: #3882F6;    
     color: white;
     padding: 8px 24px;
     font-size: 18px;
+}
+.cta{
+    justify-content: space-evenly;
+    margin: 64px auto;
+    padding: 32px 0;
+
 }
 .card{
     display: flex;
@@ -94,8 +101,8 @@ img {
     height: 150px;
     border-radius: 10px;
 }
-.item-info p {
-text-align: center;
+.item-info p, .footer {
+    text-align: center;
 }
 
 .insp-quote{
@@ -113,4 +120,16 @@ text-align: center;
     font-size: 24px;
     font-weight: 500;
     padding-top: 32px;
+}
+#cta-title
+{
+    font-size: 24px;
+    font-weight: 700;
+
+}
+.bottom{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #E5E7EB;
+    
 }
